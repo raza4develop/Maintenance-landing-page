@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maintenance Landing Pages</title>
+    <style>
+      :root {
+        --bg: #0f1720;
+        --panel: #171f2a;
+        --panel-2: #1d2b39;
+        --text: #edf4ff;
+        --muted: #b7c3d5;
+        --accent: #d6a55b;
+        --line: rgba(255,255,255,0.12);
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(180deg, var(--bg), #111827 100%);
+        color: var(--text);
+        display: grid;
+        place-items: center;
+      }
+      main {
+        width: min(960px, calc(100vw - 32px));
+        background: rgba(23, 31, 42, 0.95);
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        padding: 32px 28px;
+        box-shadow: 0 16px 42px rgba(0, 0, 0, 0.24);
+      }
+      h1 {
+        margin: 0 0 12px;
+        font-size: clamp(2rem, 4vw, 3rem);
+        line-height: 1.1;
+      }
+      p {
+        margin: 0 0 24px;
+        color: var(--muted);
+        font-size: 1.05rem;
+      }
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        gap: 14px;
+      }
+      li {
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        background: var(--panel-2);
+        overflow: hidden;
+      }
+      a {
+        display: block;
+        padding: 16px 18px;
+        color: var(--text);
+        text-decoration: none;
+        font-weight: 600;
+      }
+      a:hover,
+      a:focus-visible {
+        background: rgba(214, 165, 91, 0.08);
+        outline: none;
+      }
+      .tag {
+        display: inline-block;
+        margin-left: 8px;
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--accent);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Maintenance landing pages</h1>
+      <p>Select a version to open the live landing page.</p>
+
+      <ul>
+        <li>
+          <a href="./Lawn%20maintenance%20V1%20Classic/">
+            Lawn maintenance V1 Classic
+            <span class="tag">Page 1</span>
+          </a>
+        </li>
+        <li>
+          <a href="./Lawn-maintenance-v3/">
+            Lawn-maintenance-v3
+            <span class="tag">Page 2</span>
+          </a>
+        </li>
+        <li>
+          <a href="./landscape-construction-v2/">
+            landscape-construction-v2
+            <span class="tag">Page 3</span>
+          </a>
+        </li>
+        <li>
+          <a href="./landscape-construction-v4/">
+            landscape-construction-v4
+            <span class="tag">Page 4</span>
+          </a>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>
